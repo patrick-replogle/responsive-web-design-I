@@ -228,7 +228,7 @@ h1 {
 .section1 {
   display: flex;
   justify-content: space-around;
-  width: 900px;
+  width: 100%;
   margin: 10px 50px 0px 50px;
 }
 
@@ -236,7 +236,7 @@ h1 {
   .section1 {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -252,7 +252,7 @@ h1 {
 .blocks1 {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 50%;
   word-wrap: break-word;
   padding: 15px 20px 20px 20px; 
   margin: 25px 0px 60px 0px;
@@ -263,7 +263,7 @@ h1 {
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
-    width: 90%;
+    width: 80%;
     margin: 0;
   }
 }
@@ -281,7 +281,7 @@ h1 {
 .blocks2 {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 33%;
   word-wrap: break-word;
   padding: 15px 20px 20px 20px; 
   margin: 10px 0px 10px 0px;
@@ -292,7 +292,7 @@ h1 {
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -307,7 +307,7 @@ h1 {
 
 #main-image {
   display: flex;
-  width: 860px;
+  width: 90%;
   align-items: center;
   justify-content: space-around;
   margin: -30px 0px 0px 70px; 
