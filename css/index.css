@@ -68,37 +68,129 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	width: 960px;
-  margin: auto;
+	max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-#navigation {
+@media(max-width: 800px){
+  .container {
+   width: 100%;
+  }
+}
+
+@media(max-width: 500px){
+  .container {
+    width: 100%; 
+  }
+}
+
+.header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 25px 0px -10px 25px;
 }
 
-#navigation a {
+@media(max-width: 800px){
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0 -90px 0;
+  }
+}
+
+@media(max-width: 500px){
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.header .navigation {
+  display: flex;
+}
+
+@media(max-width: 500px){
+  .header .navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.navigation a {
   color: gray;
   text-decoration: none;
   padding: 20px;
   text-align: center; 
 }
-
-#logo {
-  margin: -10px 0px 0px 0px;
+@media(max-width: 500px){
+  .navigation a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0 10% 0 10%;
+  }
 }
 
 #innovation {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row;
+  align-items: center;
   margin: 60px 0px 60px 0px;
+}
+
+@media(max-width: 800px){
+  #innovation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: -70px 0x 20px 0px;
+  }
+}
+
+@media(max-width: 500px){
+  #innovation {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 60%;
+    margin: -40px 0 30px 0;
+  }
 }
 
 #Get Started {
   display: flex;
   vertical-align: left;
   margin: 0px 25px 0px 0px;
+}
+
+@media(max-width: 800px){
+  #Get Started {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: -70px 0 0 0;
+  }
+}
+
+@media(max-width: 500px){
+  #Get Started {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media(max-width: 800px){
+  #circle-image {
+    display: none;
+  }
 }
 
 #old-button {
@@ -125,10 +217,6 @@ button:hover {
   color: white;
 }
 
-.header-image {
-  box-sizing: border-box;
-  float: left;
-}
 
 h1 {
   vertical-align: right;
@@ -144,6 +232,23 @@ h1 {
   margin: 10px 50px 0px 50px;
 }
 
+@media(max-width: 800px){
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media(max-width: 500px){
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+  }
+}
+
 .blocks1 {
   display: flex;
   flex-direction: column;
@@ -151,6 +256,26 @@ h1 {
   word-wrap: break-word;
   padding: 15px 20px 20px 20px; 
   margin: 25px 0px 60px 0px;
+}
+
+@media(max-width: 800px){
+  .blocks1 {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 90%;
+    margin: 0;
+  }
+}
+
+@media(max-width: 500px){
+  .blocks1 {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 90%;
+    margin: 0;
+  }
 }
 
 .blocks2 {
@@ -162,6 +287,24 @@ h1 {
   margin: 10px 0px 10px 0px;
 }
 
+@media(max-width: 800px){
+  .blocks2 {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 90%;
+  }
+}
+
+@media(max-width: 500px){
+  .blocks2 {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 90%;
+  }
+}
+
 #main-image {
   display: flex;
   width: 860px;
@@ -170,15 +313,42 @@ h1 {
   margin: -30px 0px 0px 70px; 
 }
 
+@media(max-width: 800px){
+  #main-image {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 0 70px;
+  }
+}
+
+@media(max-width: 500px){
+  #main-image {
+   display: flex;
+   align-items: center;
+   width: 80%;
+   margin: 10px 0px 0px 70px;
+  }
+}
+
 #hr-old{
   margin: 5px 30px 10px 70px; 
   border-top: 1px solid grey;
 }
 
-.bottom-image {
-  display: flex;
-  margin-top: 150px;
-  margin: 0px 0px 0px 0px; 
+@media(max-width: 800px){
+  #hr-old{
+    width: 100%;
+    border-top: 1px solid grey;
+  }
+}
+
+@media(max-width: 500px){
+  #hr-old{
+    width: 100%;
+    border-top: 1px solid grey;
+  }
 }
 
 #address {
@@ -190,19 +360,11 @@ h1 {
   margin: 80px 0px 40px 25px;
 }
 
-/* media queries */
-
-@media(max-width: 800px){
-
-  #image-div {
-    display: none;
-  }
-
-}
-
-
-
 @media(max-width: 500px){
-
-
+  .#footer {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    width: 90%;
+  } 
 }
